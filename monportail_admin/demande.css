@@ -1,0 +1,83 @@
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  .colored-hr {
+    border: none; /* Remove default border */
+    height: 8px; /* Increase height for better visibility */
+    background: linear-gradient(to right, #1890FF    70%, #FFC64CCC 30%); /* Fully opaque blue and yellow */
+    margin: 0; /* Remove default margin for a clean top edge */
+    position: relative; /* Ensure it stays on top of other elements */
+    z-index: 10; /* Ensure it is not hidden by other elements */
+    opacity: 1;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+   
+  }
+  
+  .logo {
+    width: 120px;
+  }
+  .demande-section  {
+    max-width: 70%;
+    height: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+ margin-top: 20px;
+}
+
+.b1 {
+    background-color: #FF3B30;
+    color: white;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border: none;
+    margin-left: 350px;
+    margin-top: -10px;
+}
+
+.b1:hover {
+    background-color: #dc4d45;
+}
+.b2 {
+    background-color: #34C759;
+    color: white;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border: none;
+    margin-left: 170px;
+    margin-top: -10px;
+}
+
+.b2:hover {
+    background-color: #50b76a;
+}

@@ -1,0 +1,274 @@
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+.colored-hr {
+  border: none; /* Remove default border */
+  height: 8px; /* Increase height for better visibility */
+  background: linear-gradient(to right, #1890FF    70%, #FFC64CCC 30%); /* Fully opaque blue and yellow */
+  margin: 0; /* Remove default margin for a clean top edge */
+  position: relative; /* Ensure it stays on top of other elements */
+  z-index: 10; /* Ensure it is not hidden by other elements */
+  opacity: 1;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+ 
+}
+
+.logo {
+  width: 120px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #444;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 18px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.logout {
+  font-size: 16px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.logout:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    background-color: #767680 12%;
+    padding: 10px;
+    gap: -20px;
+    
+}
+.nav-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #444;
+    outline: none;
+    padding: 3px 20px;
+    box-sizing: border-box;
+    margin: 0 5px; /* Optional: add spacing between buttons */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-btn.profile-btn{
+    flex: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #444;
+    outline: none;
+    padding: 3px 20px;
+    transition: color 0.3s ease;
+    margin-left: 192px;
+    margin-right: 50px;
+    white-space: nowrap;
+}
+.nav-btn.requests-btn{
+    flex: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #444;
+    outline: none;
+    white-space: nowrap;
+    padding: 3px 20px;
+    transition: color 0.3s ease;
+    margin-left: 120px;
+}
+.nav-btn.notifications-btn{
+    margin-left: 150px;
+    padding: 2px 20px;
+    
+}
+.nav-btn:hover {
+    border-bottom: 2px solid #007bff;
+}
+
+.nav-btn.active {
+    border-bottom: 2px solid #007bff;
+}
+
+
+
+.content {
+  padding: 10px;
+  background-color: #fff;
+
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Container for the search bar */
+.search-bar-container {
+  position: relative;
+  width: 40%; /* Adjust width as needed */
+  margin: 15px auto; /* Center the search bar */
+}
+
+/* The search icon inside the bar */
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+}
+
+/* Input field for the search bar */
+.search-bar {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* Add left padding to make space for the icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* Optional: Add focus effects */
+.search-bar:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Filters container */
+.filters-container {
+  display: flex;
+  justify-content: center; /* Spread the filters across the row */
+  gap: 5%; /* Space between the filters */
+  margin-top: 20px;
+  margin-right:  200px;
+  margin-left: 200px;
+  flex-wrap: nowrap; /* Prevent wrapping to the next row */
+}
+
+/* Individual filter */
+.filter {
+  display: flex;
+  flex-direction: column;
+  width: 40%; /* Fixed width for each filter */
+}
+
+/* Labels for filters */
+.filter label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+  
+}
+
+/* Inputs and dropdowns */
+.date-picker,
+.dropdown {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Ensure inputs take up full width of their parent */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+.dropdown{
+    width:100%;
+}
+
+/* Hover effect for date picker and dropdown */
+.date-picker:hover,
+.dropdown:hover {
+  border-color: #007bff; /* Change the border color to blue on hover */
+}
+
+/* Dropdowns */
+.dropdown {
+  appearance: none; /* Hides native dropdown arrow */
+  background-color: #fff;
+}
+
+.dropdown:focus,
+.date-picker:focus {
+  border-color: #007bff; /* Blue border when focused */
+  outline: none;
+}
+
+
+
+
+
+
+.expandable-container {
+  margin: 40px 200px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  max-height: 400px; /* Limit height to enable scrolling */
+  overflow-y: auto; /* Add vertical scroll when content overflows */
+}
+
+.expandable-content {
+  display: none; /* Hidden by default */
+  padding: 20px;
+  border-bottom: 1px solid #ddd; /* Separate each section visually */
+}
+
+.toggle-btn {
+  background-color: #F3F4F7;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #d0d0d0;
+}
+
+.toggle-btn.open {
+  background-color: #c0c0c0;
+}
